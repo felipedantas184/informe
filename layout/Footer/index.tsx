@@ -10,9 +10,9 @@ const Footer = () => {
           <Image src={'/images/black_logo.png'} alt={'ADUFPI Logo'} fill className={'image'} />
         </LogoWrapper>
         <IconsNav>
-          <a target='_blank' href='/' arial-label='Instagram'><FaInstagram size={24} color={'#13131A'} /></a>
-          <a target='_blank' href='/' arial-label='Facebook'><FaFacebook size={24} color={'#13131A'} /></a>
-          <a target='_blank' href='mailto:ricardo@tecdata.com.br' arial-label='Email'><FaEnvelope size={24} color={'#13131A'} /></a>
+          <a target='_blank' href='https://pt-br.facebook.com/adufpi/' arial-label='Instagram'><FaInstagram size={24} color={'#13131A'} /></a>
+          <a target='_blank' href='https://www.instagram.com/adufpi/' arial-label='Facebook'><FaFacebook size={24} color={'#13131A'} /></a>
+          <a target='_blank' href='mailto:secretaria@adufpi.org.br' arial-label='Email'><FaEnvelope size={24} color={'#13131A'} /></a>
         </IconsNav>
       </Wrapper>
     </Container>

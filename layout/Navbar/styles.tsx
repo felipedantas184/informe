@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
     padding: 0 8px;
   }
 `
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled.a`
   position: relative;
   width: 100%;
   max-width: 150px;

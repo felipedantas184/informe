@@ -6,7 +6,7 @@ const Navbar = () => {
   return ( 
     <Container>
       <Wrapper>
-        <LogoWrapper>
+        <LogoWrapper href="https://adufpi.org.br/">
           <Image src={'/images/black_logo.png'} alt="ADUFPI Logo" fill />
         </LogoWrapper>
         <FaBars size={32} color='#13131A' />

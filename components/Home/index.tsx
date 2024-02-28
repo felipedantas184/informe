@@ -35,7 +35,7 @@ const Home = () => {
             <>
               <InputGroup>
                 <Label>CPF</Label>
-                <Input type="text" placeholder="Digite seu CPF" required minLength={11}
+                <Input type="number" placeholder="Digite seu CPF (apenas números)" required minLength={11}
                   onChange={(e) => {setCpf(e.target.value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')), setCpfUrl(e.target.value)}} value={cpf} />
               </InputGroup>
               {(!waiting && !cpfExists) ? (
