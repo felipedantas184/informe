@@ -5,13 +5,12 @@ import { ExistingList, InformesData } from "@/data/InformesData";
 
 const Home = () => {
   const [cpf, setCpf] = useState<any>()
-  const [cpfUrl, setCpfUrl] = useState<any>()
   const [cpfExists, setCpfExists] = useState<Boolean>(false)
   const [waiting, setWaiting] = useState<Boolean>(true)
 
   const handleSubmitCpf = async (e: any) => {
     e.preventDefault()
-    if (ExistingList.includes(cpfUrl)) {
+    if (ExistingList.includes(cpf)) {
       setCpfExists(true)
       setWaiting(false)
     } else {
@@ -35,8 +34,8 @@ const Home = () => {
             <>
               <InputGroup>
                 <Label>CPF</Label>
-                <Input type="number" placeholder="Digite seu CPF (apenas números)" required minLength={11}
-                  onChange={(e) => {setCpf(e.target.value.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4')), setCpfUrl(e.target.value)}} value={cpf} />
+                <Input type="number" placeholder="Digite seu CPF (apenas números)" required minLength={11} 
+                  onChange={(e) => setCpf(e.target.value)} value={cpf} />
               </InputGroup>
               {(!waiting && !cpfExists) ? (
                 <NotAvailable>Não foi possível localizar o informe</NotAvailable>
@@ -64,7 +63,7 @@ const Home = () => {
                 <Subtitle>CPF não encontrado</Subtitle>
               </>
             ) : (
-              <iframe src={`/informes/${cpfUrl}.pdf`} width={'100%'} height={'100%'} />
+              <iframe src={`/informes/${cpf}.pdf`} width={'100%'} height={'100%'} />
             )
           )}
         </PDFViewer>
