@@ -27,7 +27,7 @@ const Home = () => {
             <Image src={'/images/black_logo.png'} alt="ADUFPI Logo" fill />
           </LogoWrapper>
           <Heading>
-            <Title>Informe de Pagamentos UNIMED 2023</Title>
+            <Title>Informe de Pagamentos UNIMED 2024</Title>
             <Subtitle>Digite seu CPF para ter acesso ao seu informe de pagamentos</Subtitle>  
           </Heading>
           {(waiting || !cpfExists) ? (
