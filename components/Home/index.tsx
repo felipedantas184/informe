@@ -63,7 +63,7 @@ const Home = () => {
                 <Subtitle>CPF não encontrado</Subtitle>
               </>
             ) : (
-              <iframe src={`/informes/${cpf}.pdf`} width={'100%'} height={'100%'} />
+              <iframe src={`/informes/--- ${cpf}.pdf`} width={'100%'} height={'100%'} />
             )
           )}
         </PDFViewer>
