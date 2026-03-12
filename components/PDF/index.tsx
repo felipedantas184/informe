@@ -16,7 +16,7 @@ const PDFViewer = ({ cpf }: any) => {
 
   return (
     <div style={{height: '100vh'}}>
-        <iframe src={`/informes/${cpf}.pdf`} width={'100%'} height={'100%'} />
+        <iframe src={`/docs/${cpf}.pdf`} width={'100%'} height={'100%'} />
     </div>
   );
 }
